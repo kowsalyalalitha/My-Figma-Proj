@@ -1,0 +1,792 @@
+body{
+  width: 1440px;
+  height: 934px;
+}
+
+.proj-img-style{
+  margin-left: 30px;
+}
+
+.project-m-container{
+  overflow: hidden;
+  position: relative;
+  /* width: 100%; */
+}
+
+.project-m{
+  position: relative;
+  top: -61px;
+  margin-left: 85px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+  margin-left: 340px;
+  position: relative;
+  top: -110px;
+}
+
+input[type="text"] {
+  padding: 12px;
+  width: 300px;
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-results {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.left-arrow{
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  left: 17%;
+  transform: translate(-100%, -50%);
+  transition: left 0.3s ease;
+  width: 24px;
+  height: 24px;
+}
+
+.left-arrow.clicked {
+  left: 0;
+}
+
+.right-arrow{
+  cursor: pointer;
+  position: absolute;
+  top: 15%;
+  width: 24px;
+  height: 24px;
+  transition: right 0.3s ease;
+}
+
+.right-arrow.clicked {
+  right: 0;
+}
+
+.underline-full-width {
+  width: 1438.5px; 
+  height: 0;
+  border-bottom: 1px solid #DBDBDB; 
+  position: relative;
+  top: -50px;
+}
+
+.underline-full-height{
+  position: absolute;
+  top: 0;
+  margin-left: 260px;
+  bottom: 0;
+  width: 0; 
+  height: 1008px;
+  border-right: 1px solid #DBDBDB; 
+}
+
+.Home-Imgsty{
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative;
+  top: -220px;
+}
+
+.Home-style{
+  margin-left: 50px;
+  font-size: 20px;
+  position: relative;
+  top: -248px;
+  cursor: pointer;
+  color: #787486;
+}
+
+.mess-style{
+  margin-left: 50px;
+  font-size: 20px;
+  position: relative;
+  top: -210px;
+  cursor: pointer;
+  color: #787486;
+}
+
+.clickable-image{
+  margin-left: 9px;
+  position: relative;
+  top: -230px;
+  cursor: pointer;
+}
+
+/* Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.modal-content {
+  margin-top: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.taskImg-style{
+  cursor: pointer;
+  margin-left: 10px;
+  position: relative;
+  top: -200px;
+}
+
+.Task-style{
+  margin-left: 50px;
+  font-size: 20px;
+  position: relative;
+  top: -225px;
+  cursor: pointer;
+  color: #787486;
+}
+
+.GroImg-style{
+  margin-left: 7px;
+  cursor: pointer;
+  position: relative;
+  top: -190px;
+}
+
+.Group-style{
+  cursor: pointer;
+  margin-left: 50px;
+  position: relative;
+  top: -225px;
+  font-size: 20px;
+  color: #787486
+}
+
+.sett-Img-style{
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative;
+  top: -180px;
+}
+
+.setting-style{
+  cursor: pointer;
+  margin-left: 50px;
+  position: relative;
+  top: -208px;
+  font-size: 20px;
+  color: #787486
+}
+
+.Settings-Down-Box{
+  width: 250px;
+  height: 0;
+  border-bottom: 1px solid #DBDBDB;
+  position: relative;
+  top: -160px;
+}
+
+.cal-icon{
+    margin-left: 690px;
+    position: relative;
+    top: -45px;
+}
+
+.ques-icon{
+  position: relative;
+  top: -43px;
+  padding-left: 20px;
+}
+
+.notifi-icon{
+  position: relative;
+  top: -43px;
+  padding-left: 20px;
+}
+
+.right-head{
+  float: right;
+  position: relative;
+  top: -80px;
+  margin-right: 180px;
+  font-size: 12px;
+}
+
+.right-para{
+  float: right;
+  position: relative;
+  top: -50px;
+  margin-right: -100px;
+}
+
+.Mypic-style{
+  float: right;
+  width: 38px;
+  height: 40px;
+  margin-right: -170px;
+  position: relative;
+  top: -50px;
+}
+
+.Aw-Down-style{
+  float: right;
+  margin-right: -200px;
+  position: relative;
+  top: -40px;
+}
+
+/* My Projects.css */
+.myProj-container{
+  position: relative;
+}
+
+.myProj-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.M-P-Icon{
+  margin-left: 200px;
+  margin-top: -200px;
+}
+
+.myProjct-style{
+   position: relative;
+   top: -100px;
+   margin-left: -190px;
+   color: #787486;
+}
+
+.nav-options-container {
+  position: absolute;
+  top: -60px; /* Adjust distance from header */
+  left: 0;
+  width: 200px; /* Adjust width as needed */
+  overflow: hidden;
+  transition: height 0.3s ease-in-out; /* Add animation for sliding effect */
+}
+
+.nav-options li {
+  padding: 10px;
+  cursor: pointer;
+  color: #787486;
+}
+
+.nav-options li:hover {
+  background-color: #DBDBDB;
+}
+
+.Header-Name{
+  margin-left: -10px;
+  font-size: 35px;
+}
+
+.Arrow-up-style{
+  margin-left: 200px;
+  position: relative;
+  top: -50px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 1000; /* ensure it's above other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-form-popup{
+  padding: 5px;
+  width: 640px;
+  margin-left: 49%;
+  position: relative;
+  top: -55px;
+}
+
+.editable-form-popup {
+  background-color: white;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1100; /* ensure popup is above overlay */
+}
+
+.form-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-row input[type="text"],
+.form-row input[type="date"],
+.form-row textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-row textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.form-row button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.form-row button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Mobile App Form Open */
+.Box-open-Head{
+  margin-left: 85px;
+  position: relative;
+  top: -50px;
+}
+
+.close-style{
+  margin-left: 330px;
+  position: relative;
+  top: -85px;
+}
+
+.underline-style{
+  width: 132%; 
+  height: 0;
+  margin-left: -58px;
+  border-bottom: 1px solid #DBDBDB;
+  position: relative;
+  top: -55px;
+}
+
+.name-style{
+  position: relative;
+  top: -30px;
+}
+
+.text-padding{
+  position: relative;
+  top: -20px;
+}
+
+.line-sty{
+  width: 133%; 
+  margin-left: -60px;
+  height: 0;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.save-style{
+  margin-left: 250px;
+  position: relative;
+  top: 25px;
+  background-color: #5030E5;
+  color: white;
+}
+
+.close-sty{
+  margin-left: 20px;
+  position: relative;
+  top: 25px;
+}
+
+/* Left Side Lamp,Thoughts Time Styles */
+
+.Union-Css{
+  position: relative;
+  top: 80px;
+  margin: 20px;
+}
+
+.Thoug-Css{
+  position: relative;
+  top: -130px;
+  margin-left: -135px;
+}
+
+.Thought-style{
+  position: relative;
+  top: -115px;
+  margin-left: 70px;
+}
+
+.thought-para-style{
+  position: relative;
+  top: -115px;
+  margin-left: 33px;
+}
+
+.mess-Thoug-style{
+  position: relative;
+  top: -110px;
+  margin-left: 60px;
+  background-color: white;
+  padding: 3px;
+}
+
+/* Header Link,Imgs,Extra styles */
+
+.links-img-style{
+  float: right;
+  position: relative;
+  top: -918px;
+  margin-right: 820px;
+}
+
+.plus-style{
+  float: right;
+  position: relative;
+  top: -913px;
+  margin-right: -600px;
+}
+
+.invite-style{
+  float: right;
+  position: relative;
+  top: -935px;
+  margin-right: -650px;
+  color: #5030E5;
+}
+
+.Boy-img-style{
+  float: right;
+  position: relative;
+  top: -925px;
+  margin-right: -700px;
+}
+
+.Girl-img-style{
+  float: right;
+  position: relative;
+  top: -925px;
+  margin-right: -727px;
+}
+
+.Boys1-img-style{
+  float: right;
+  position: relative;
+  top: -925px;
+  margin-right: -755px;
+}
+
+.Boys2-img-style{
+  float: right;
+  position: relative;
+  top: -925px;
+  margin-right: -783px;
+}
+
+.Round-img-style{
+  float: right;
+  position: relative;
+  top: -925px;
+  margin-right: -807px;
+}
+
+.Plus2-img-style{
+  float: right;
+  position: relative;
+  top: -914px;
+  margin-right: -796px;
+}
+
+/* Filter Side Bars */
+.Filter-Css{
+  margin-left: 330px;
+  position: relative;
+  top: -850px;
+}
+
+.Today-Css{
+  margin-left: 490px;
+  position: relative;
+  top: -894px;
+}
+
+.share-sty{
+  margin-left: 580px;
+  position: relative;
+  top: -894px;
+}
+
+.Right-sty{
+  position: relative;
+  top: -888px;
+  float: right;
+  margin-right: 142px;
+}
+
+.Double-sty{
+  position: relative;
+  top: -938px;
+  float: right;
+  margin-right: 95px;
+}
+
+.Menus-sty{
+  position: relative;
+  top: -928px;
+  float: right;
+  margin-right: -70px;
+}
+
+
+/* Boxes Styles */
+
+.bbf-Css{
+  position: relative;
+  top: -850px;
+  margin-left: 325px;
+}
+
+.Togo-Css{
+  position: relative;
+  top: -1430px;
+  margin-left: -300px;
+}
+
+.Four-Css{
+  position: relative;
+  top: -1430px;
+  margin-left: 25px;
+}
+
+.Plus-Css{
+  position: relative;
+  top: -1435px;
+  margin-left: 150px;
+}
+
+.vectorline-Css{
+  position: relative;
+  top: -1410px;
+  margin-left: -308px;
+}
+
+
+/*  Boxes Icons Css */
+
+.White-Box-Sty{
+  position: relative;
+  top: -1200px;
+  margin-left: -315px;
+}
+
+.Lowtext-Sty{
+  position: relative;
+  top: -1350px;
+  margin-left: -280px;
+}
+
+.Three-Dots-Sty{
+  position: relative;
+  top: -1350px;
+  margin-left: 210px;
+}
+
+.text-Sty{
+  position: relative;
+  top: -1310px;
+  margin-left: -250px;
+}
+
+.Text-Para{
+  position: relative;
+  top: -1310px;
+  margin-left: 375px;
+  font-size: 13px;
+}
+
+.Pic-icons-sty{
+  position: relative;
+  top: -1485px;
+  margin-left: 370px;
+}
+
+/* 2ed Boxes Styles */
+.Sec-Sty{
+  position: relative;
+  top: -1270px;
+  margin-left: -308px;
+}
+
+.High-sty{
+  position: relative;
+  top: -1415px;
+  margin-left: -280px;
+}
+
+.three-sty{
+  position: relative;
+  top: -1420px;
+  margin-left: 190px;
+}
+
+.research-sty{
+  position: relative;
+  top: -1390px;
+  margin-left: -250px;
+}
+
+.second-Para{
+  position: relative;
+  top: -1390px;
+  margin-left: 375px;
+  font-size: 13px;
+}
+
+.Seconds-Pic-sty{
+  position: relative;
+  top: -1525px;
+  margin-left: 370px;
+}
+
+.Wireframes{
+  position: relative;
+  top: -1805px;
+  margin-left: 45px;
+}
+
+/* 2nd Tables */
+.bbf-Style{
+  position: relative;
+  top: -1805px;
+  margin-left: 30px;
+}
+
+.onProgress-sty{
+  position: relative;
+  top: -2380px;
+  margin-left: -330px;
+}
+
+.three-Round-sty{
+  position: relative;
+  top: -2380px;
+  margin-left: 30px;
+}
+
+.vectorsec-sty{
+  position: relative;
+  top: -2360px;
+  margin-left: -160px;
+}
+
+.onBoard-pics{
+  position: relative;
+  top: -2330px;
+  margin-left: 730px;
+}
+
+.Fourthpic-sty{
+  position: relative;
+  top: -2320px;
+  margin-left: 730px;
+}
+
+
+/* 3rd Tables */
+.bbfthree-Style{
+  float: right;
+  position: relative;
+  top: -2695px;
+}
+
+.done-text-style{
+  float: right;
+  position: relative;
+  top: -2660px;
+  margin-right: -100px;
+}
+
+.secimgs-style{
+  float: right;
+  position: relative;
+  top: -2660px;
+  margin-right: -150px;
+}
+
+.vector-three{
+  float: right;
+  position: relative;
+  top: -2620px;
+  margin-right: -320px;
+}
+
+.six-pic-style{
+  float: right;
+  position: relative;
+  top: -2590px;
+  margin-right: -330px;
+}
+
+.seven-pic-style{
+  float: right;
+  position: relative;
+  top: -2250px;
+  margin-right: -330px;
+}
+
+
+/* 
+                           #7AC555">Mobile App</li>
+            <li className="#FFA500">Website Redesign</li>
+            <li className="#E4CCFD">Design System</li>
+            <li className="#76A5EA" */
